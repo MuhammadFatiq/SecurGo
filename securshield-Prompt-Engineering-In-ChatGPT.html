@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Unleash the Power of Prompt Engineering in ChatGPT</title>
+        <link rel="icon" type="image/x-icon" href="assets/CyberBits-Logo.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">CyberBits by Kairos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">All Posts</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/prompt-engineering.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>[Cyber Bits] Unleash the Power of Prompt Engineering in ChatGPT</h1>
+                            <h2 class="subheading">A Simple Guide</h2>
+                            <span class="meta">
+                                Posted by muhammad Fatiq
+                                on 24 Sep, 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Background</h2>
+                        <p> Recently (28 May - 5 June), I had the opportunity to attend BuildBlocs' June Conference
+                            on AI, a captivating event that delved into the exciting realm of artificial intelligence. I
+                            was able to immerse myself in a wealth of knowledge, from the intriccacies of prompt engineering
+                            to gaining deeper insights to different python libraries like Numpy, Tensorflow, Sklearn and more.
+                            This conference equipped me with a diverse set of AI skills, and inspired it, I would like to
+                            share my insights on prompt engineering in this blog post.
+                        </p>
+
+                        <h2 class="section-heading">Terms</h2>
+                        <br>
+                        <h4>Prompt</h4>
+                        <p>A prompt is the text-based input given to natural language AI models to perform tasks.
+                            Prompt engineering is a sophisticated natural language processing (NLP)
+                             technique that enables users to elicit desired replies from language
+                              models such as ChatGPT. </p>
+                        <h4>Temperature</h4>
+                        <p>
+                            The Temperature parameter controls the randomness of the predictions(output). The higher the temperature,
+                            the more likely the model is to sample unlikely tokens (more diverse and creative). The lower the temperature,
+                            the more likely the model is to produce more focused and predictable outputs.
+                        </p>
+                        <h4>Frequency</h4>
+                        <p>
+                            The frequency parameter controls the number of occurence of certain phrases or information in the prompt.
+                            It can be used to encourage the model to prioritise certain information over others. Conversely, it can
+                            also be used to discourage the model from using certain information, minimising their impact on the output.
+                        </p>
+
+                        <h2 class="section-heading">Prompt Engineering Techniques</h2>
+                        <p>With the jargon out of the way, let's dive into the different prompt engineering techniques!</p>
+
+                        <h3> 1. Context Setting
+                        </h3>
+                        <p> Context setting involves providing a brief introduction to the topic of the prompt. This allows the model to
+                            understand the context of the prompt, and generate more relevant responses.</p>
+                        <p> For instance, we can use a prompt like:<br><br> "Pretend that you are an cybersecurity researcher. You are tasked to
+                            write a report on a prominent cyber attack. Write a report on the cyber attack." </p>
+
+                        <h3>2. Answer Format</h3>
+                        <p>
+                            Answer format involves providing a desired format or sample answer to the prompt. This allows the model to understand the
+                            format of the answer, and generate more relevant responses.
+                        </p>
+
+                        <p> For instance, we can use prompts like:<br><br> "List the top 3 cyber attacks in 2020."<br><br> "In bullet points, explain
+                            the typical steps performed by a threat actor in a cyber attack."
+                        </p>
+
+                        <h3>3. Temperature Control</h3>
+                        <p> As mentioned under the terms section, temperature controls the randomness of the model's predictions or output.
+                        </p>
+                        <p> For instance, we can use prompts like:<br><br> "Tell me a joke about computers. Generate a response with a temperature setting
+                            of 0.8." <br><br> "Generate a report on computer security with a temperature setting of 0.2."</p>
+                        <p>
+                            By setting a higher temperature (0.8), the model will produce more diverse and creative jokes about computers, resulting in
+                            potentially more imaginative and amusing responses. <br>
+                            Conversely, by setting a lower temperature (0.2), the model will produce more focused and predictable reports on computer security.
+                        </p>
+
+                        <h3>4. Frequency Adjustment</h3>
+                        <p>Also with reference to the terms section, frequency allows users to control the occurence of phrases in the prompt to encourage
+                            or discourage the model from focusing on certain information.
+                         </p>
+                         <p>For example, we can use prompts like: <br><br> "Generate a report on the top 3 cyber attacks in 2020. The report should mention
+                            the SolarWinds attack more than 3 times." <br><br> "Provide a summary of discoveries made by cybersecurity researchers in 2010, with a reduced
+                            frequency of technical jargon."
+                        </p>
+
+                        <h2 class ="section-heading"> Prompt Optimisation</h2>
+                        <h3>Experimentation</h3>
+                        <p>Prompt engineering often involves an iterative process of experimentation and refinement. Hence, users would have to experiment with different
+                            prompts and settings to achieve the desired results. By observing the model's responses, users can then refine their prompts and settings accordingly.
+                        </p>
+
+                        <h2 class="section-heading">Conclusion</h2>
+                        <p> While prompt engineering can be used to empower users to elicit desired responses from language models, it is not a silver bullet. It
+                            is not a replacement for human intelligence, and should be used to complement it. Users should also be aware of the ethical considerations such as bias
+                            and misinformation that may arise from the use of prompt engineering. As research in this field advances, we can expect that prompt engineering will continue to evolve
+                            and provide us users with more control and customisations. By leveraging on the power of prompt engineering, we can harness the power of language models to generate
+                            meaningful and relevant responses to our prompts. However, it is crucial to use this power responsibly and with a critical eye towards
+                            ensuring accurate and unbiased information.
+                        </p>
+
+                        <p>References:<br> <br>
+                            <a href="https://www.androidauthority.com/what-is-prompt-engineering-3330031/">1. Wankhede, C. (2023). What is prompt engineering and how does it work? Android Authority.</a>
+                            <a href = "https://zapier.com/blog/prompt-engineering/">2. Sarah P. Grant (May, 2023). What is prompt engineering? Zapier</a>
+                            <a href = "https://www.promptingguide.ai">3. Prompt Engineering Guide - Nextra. (n.d.). </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="mailto:contact@kairostay.com">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://linkedin.com/in/kairoshestiatay/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Kairos-T">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/kairostay">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; SecurGo 2024</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
